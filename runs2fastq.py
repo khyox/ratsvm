@@ -38,7 +38,7 @@ def main():
     program = os.path.join(args.sratoolkit, 'bin', STK_DUMPER)
 
     # Release information
-    __version__ = '0.1.1'
+    __version__ = '0.1.2'
     __date__ = 'Feb 2018'
 
     # Program header
@@ -75,15 +75,14 @@ def main():
             except sp.TimeoutExpired:
                 pass
             except KeyboardInterrupt:
-                print('Killed by user! ', end='')
+                print(f'\tPID {sub.pid} ({srr}) killed by user! ', end='')
                 sub.kill()
                 outs, errs = sub.communicate()
-                finished[srr] = True
             if outs or errs:
-                print(f'Output from retrieval of {srr} (PID {sub.pid}):')
+                print(f'\nOutput from retrieval of {srr} (PID {sub.pid}):')
                 print(outs, errs)
-            if sub.returncode:
-                print(f'Retrieving {srr} finished with '
+            if sub.returncode is not None:
+                print(f'\nRetrieving {srr} finished with '
                       f'exit code {sub.returncode}')
                 finished[srr] = True
     print(f'All {STK_DUMPER} processes finished!')
