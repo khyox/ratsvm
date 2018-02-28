@@ -9,7 +9,7 @@ import os.path
 import subprocess as sp
 import sys
 
-STK_PATH = '/Users/martijm/local/sratoolkit'
+STK_PATH = '~/ratsmv/sra-tools'
 STK_DUMPER = 'fastq-dump'
 FLAG_SPLITFILES = '--split-files'
 FLAG_MRLEN = '--minReadLen'
@@ -38,7 +38,7 @@ def main():
     program = os.path.join(args.sratoolkit, 'bin', STK_DUMPER)
 
     # Release information
-    __version__ = '0.1.2'
+    __version__ = '0.1.3'
     __date__ = 'Feb 2018'
 
     # Program header
