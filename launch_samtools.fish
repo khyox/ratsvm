@@ -1,18 +1,19 @@
 #!/usr/bin/env fish
-# JMMM - rel 0.1
+# JMMM - rel 0.2
 
 function help_exit
     echo "Usage:  [options] bt2database"
     echo "Options:"
-    echo "-s PATH : samtools path"
-    echo "-p PROC : Number of processors"
+    echo "-s/--samtls_path PATH : samtools path"
+    echo "-p/--proc PROC : Number of processors"
+    echo "-h/--help: Display this help"
     echo "Argument: for example, hg19plusRNA"
     exit 1
 end
 
 set -l options (fish_opt -s h -l help)
 set options $options (fish_opt -s p -l proc --required-val)
-set options $options (fish_opt -s s -l samt_path --required-val)
+set options $options (fish_opt -s s -l samtls_path --required-val)
 argparse --name launch_samtools --min-args 1 --max-args 1 $options -- $argv
 if test ! $status -eq 0; or set -q _flag_h
     help_exit

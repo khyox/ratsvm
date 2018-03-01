@@ -1,19 +1,19 @@
 #!/usr/bin/env fish 
-# JMMM - rel. 0.2
+# JMMM - rel. 0.3
 
 function help_exit
     echo "Usage:  [options] bt2database"
     echo "Options:"
-    echo "-b PATH : Bowtie2 path"
-    echo "-d PATH : Database path"
-    echo "-p PROC : Number of processors"
-    echo "-v : Enable very sensitive mode"
+    echo "-b/--bt2_path PATH : Bowtie2 path"
+    echo "-d/--db_path PATH : Database path"
+    echo "-p/--proc PROC : Number of processors"
+    echo "-v/--very-sensitive : Enable very sensitive mode"
     echo "Argument: for example, hg19plusRNA"
     exit 1
 end
 
 set -l options (fish_opt -s h -l help)
-set options $options (fish_opt -s v -l --very-sensitive)
+set options $options (fish_opt -s v -l very-sensitive)
 set options $options (fish_opt -s p -l proc --required-val)
 set options $options (fish_opt -s d -l db_path --required-val)
 set options $options (fish_opt -s b -l bt2_path --required-val)
