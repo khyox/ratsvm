@@ -24,8 +24,8 @@ end
 
 # Set default values
 set -q _flag_p; or set -l _flag_p 64
-set -q _flag_d; or set -l _flag_d ~/ratsmv/HSS
-set -q _flag_b; or set -l _flag_b ~/ratsmv/bowtie2
+set -q _flag_d; or set -l _flag_d ~/ratsvm/HSS
+set -q _flag_b; or set -l _flag_b ~/ratsvm/bowtie2
 
 # Set aux variables values
 set -q _flag_v; and set -g opts --very-sensitive
