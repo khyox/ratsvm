@@ -44,5 +44,5 @@ ____
 
 If you use RATSVM in your research, please consider to cite the chapter. Thanks!
 
-**Martí J.M. (2018) Robust Analysis of Time Series in Virome Metagenomics**. In: Moya A., Pérez Brocal V. (eds) The Human Virome. Methods in Molecular Biology, vol 1838. Humana Press, New York, NY. 
+**Martí J.M. (2018) Robust Analysis of Time Series in Virome Metagenomics**. In: Moya A., Pérez Brocal V. (eds) The Human Virome. Methods in Molecular Biology, vol 1838. Springer Nature, New York, NY. ISBN 978-1-4939-8682-8. 
 DOI: https://doi.org/10.1007/978-1-4939-8682-8_17
