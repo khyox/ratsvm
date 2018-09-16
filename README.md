@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains scripts used in the chapter _Robust Analysis of Time Series in Virome Metagenomics_, of the book _The Human Virome: Methods and Protocols_, _Methods in Molecular Biology_ series of [Springer](http://www.springer.com/).
+This repository contains scripts used in the chapter [Robust Analysis of Time Series in Virome Metagenomics](https://experiments.springernature.com/articles/10.1007/978-1-4939-8682-8_17), of the book [The Human Virome: Methods and Protocols, Methods in Molecular Biology](https://link.springer.com/book/10.1007/978-1-4939-8682-8) series of [Springer Nature](https://www.springernature.com/) (First Online: 21 August 2018).
 
 ## runs2fastq.py
 
@@ -41,3 +41,8 @@ The scripts `rawlmat2lmat.py` and `lmat2cmplx.py` perform a two-step translation
 cmplxcruncher computing kernel is a python tool to analyze the dynamics of ranking processes in metagenomics that is still under development. Currently, it already performs many interactive and automatic analysis with both numeric and graphic results.
 
 ____
+
+If you use RATSVM in your research, please consider to cite the chapter. Thanks!
+
+**Martí J.M. (2018) Robust Analysis of Time Series in Virome Metagenomics**. In: Moya A., Pérez Brocal V. (eds) The Human Virome. Methods in Molecular Biology, vol 1838. Humana Press, New York, NY. 
+DOI: https://doi.org/10.1007/978-1-4939-8682-8_17
